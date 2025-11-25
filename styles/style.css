@@ -38,14 +38,11 @@ main {
     display: flex;
     align-items: center;
 }
+
 .logo{
     height: 40px;
 }
-.sitetitle {
-    margin-left: 10px;
-    font-weight: 500;
-    font-size: 20px;
-}
+
 nav ul {
     display: flex;
     padding: 0;
