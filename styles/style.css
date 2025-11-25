@@ -77,10 +77,12 @@ nav ul a:hover {
     min-height: 450px;
     padding: 50px;
     background-image: image-set(
-    url("../images/header.webp") type("image/webp"),
-    url("../images/header.png") type("image/png"));
+        url("../images/header.webp") type("image/webp") 1x,
+        url("../images/header.png")  type("image/png")  1x
+    );
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 }
 p.tagline {
