@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Laboration 2 i kursen grafisk teknik för webb">
+    <title>Laboration 1 — Del 2</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="FotoLabb">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Google Webfonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div class="siteid"><img src="images/logo.svg" class="logo" alt="FotoLabb" width="300" height="100"></div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Startsida</a></li>
+                    <li><a href="bildredigering.html" class="active">Bildredigering</a></li>
+                    <li><a href="om.html">Om mig</a></li>
+                </ul>
+            </nav>
+        </header>
+
+         <div class="hero">
+            <h1>Laboration 1 - Bildredigering</h1>
+            <p class="tagline">Denna webbplats är byggd för moment 1 i kursen <strong>Grafisk teknik för webb</strong> på Mittuniversitetet.</p>
+        </div>
+
+        <main>
+            <section class="info">
+                <h2>Bilder</h2>
+                <p>Nedan finns tre redigerade bilder och en beskrivning om vad som har redigerats i bilderna.</p>
+                <p>Till vänster är orginalbilden och till höger är den redigerade.</p>
+            </section>
+
+            <div class="imagebox">
+
+                <picture>
+                    <source srcset="images/bilserie007org.webp, images/bilserie007org@2.webp 2x, images/bilserie007org@3.webp 3x" type="image/webp">
+                    <img src="images/bilserie007org.jpg" alt="Båtar i kanal, oredigerad bild" class="respimg" width="600" height="800" loading="lazy">
+                </picture>
+
+                <picture>
+                    <source srcset="images/bilserie007.webp, images/bilserie007@2.webp 2x, images/bilserie007@3.webp 3x" type="image/webp">
+                    <img src="images/bilserie007.jpg" alt="Båtar i kanal, redigerad bild" class="respimg" width="600" height="800" loading="lazy">
+                </picture>
+
+                <div class="imgdesc"> <p>Bilden har beskärts. Flygplanet har tagits bort med hjälp av "patch tool". Bildens färg har även justerats något med hjälp av vitbalans och kontrast.</p></div>
+
+            </div>
+
+            <div class="imagebox">
+
+                <picture>
+                    <source srcset="imgages/mob/bilserie007.webp, imgages/mob/bilserie007@2.webp 2x, imgages/mob/bilserie007@3.webp 3x" media="(width >= 600px)">
+                    <source srcset="images/bilserie011org.webp, images/bilserie011org@2.webp 2x" type="image/webp">
+                    <img src="images/bilserie011org.jpg" alt="Man hoppar bland stenpelare, oredigerad bild" class="respimg" width="600" height="800" loading="lazy">
+                </picture>
+
+                <picture>
+                    <source srcset="images/bilserie011.webp, images/bilserie011@2.webp 2x" type="image/webp">
+                    <img src="images/bilserie011.jpg" alt="Man hoppar bland stenpelare, redigerad bild" class="respimg" width="600" height="800" loading="lazy">
+                </picture>
+
+                <div class="imgdesc"><p>Bilden har roteras. Färgen på tröjan har ändrats till blå. I bilden har även ljushet och kontrast ändrats.</p></div>
+            </div>
+
+            <div class="imagebox">
+
+                <picture>
+                    <source srcset="images/bilserie014org.webp, images/bilserie014org@2.webp 2x, images/bilserie014orgg@3.webp 3x" type="image/webp">
+                    <img src="images/bilserie014org.jpg" alt="Santa Maria delle Grazie, kyrka i Milano, oredigerad bild" class="respimg" width="600" height="800" loading="lazy">
+                </picture>
+               
+                <picture>
+                    <source srcset="images/bildserie014.webp, images/bildserie014@2.webp 2x, images/bildserie014@3.webp 3x" type="image/webp">
+                    <img src="images/bildserie014.jpg" alt="Santa Maria delle Grazie, kyrka i Milano, redigerad bild" class="respimg" width="600" height="800" loading="lazy">
+                </picture>
+
+                <div class="imgdesc"><p>I bilden har fingret plockats bort. Även ljushet och kontrast har ändrats i bilden.</p></div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footerinner">
+                <small>© 2025</small>
+            </div>
+        </footer>
+
+</body>
+</html>
