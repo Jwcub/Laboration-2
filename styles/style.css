@@ -61,9 +61,11 @@ nav ul a:hover {
     color: #fff;
     text-decoration: underline;
 }
+
 .active {
     color: #fff;
 }
+
 .hero {
     width: 100%;
     display: flex;
@@ -74,14 +76,15 @@ nav ul a:hover {
     min-height: 450px;
     padding: 50px;
     background-image: image-set(
-        url("../images/header.webp") type("image/webp") 1x,
-        url("../images/header.png")  type("image/png")  1x
+        url("../images/header.webp") type(image/webp) 1x,
+        url("../images/header.png")  type(image/png)  1x
     );
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 }
+
 p.tagline {
     margin-top: 0;
     font-size: 18px;
